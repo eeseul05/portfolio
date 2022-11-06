@@ -1,0 +1,59 @@
+/* XEICON CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sns a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  margin: 0 10px;
+  position: relative;
+}
+.sns a:before {
+  content: attr(data-text);
+  font-size: 14px;
+  color: #fff;
+  background-color: #454545;
+  padding: 4px 8px;
+  border-radius: 5px;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.sns a:after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background-color: #454545;
+  position: absolute;
+  top: -23px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+.sns a i {
+  font-size: 1.2em;
+}
+/* Hover Function */
+.sns a:before,
+.sns a:after {
+  /* display: none; */
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.sns a:hover:before,
+.sns a:hover:after {
+  /* display: block; */
+  opacity: 1;
+  visibility: visible;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Category | SCSS Practical Publishing</title>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Jquery CDN & Custom JS -->
+  <script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="index.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>menu</h1>
+      <ul>
+        <li><a href="#"><i class="xi-user-o"></i></a></li>
+        <li><a href="#"><i class="xi-cart-o"></i></a></li>
+      </ul>
+    </header>
+    <!-- Menu Category -->
+    <nav>
+      <ul class="menu-category">
+        <li>
+          <p>채소<i class="xi-angle-down-min"></i></p>
+          <div class="sub-menu">
+            <a href="#">친환경 유기농</a>
+            <a href="#">양파·마늘·고추</a>
+            <a href="#">나물·쌈채소</a>
+            <a href="#">버섯·오이·양배추·양상추</a>
+            <a href="#">씻어나온 채소</a>
+          </div>
+        </li>
+        <li>
+          <p>쌀·곡물<i class="xi-angle-down-min"></i></p>
+          <div class="sub-menu">
+            <a href="#">쌀</a>
+            <a href="#">잡곡</a>
+            <a href="#">가루</a>
+            <a href="#">간편식</a>
+          </div>
+        </li>
+        <li>
+          <p>정육·계란<i class="xi-angle-down-min"></i></p>
+          <div class="sub-menu">
+            <a href="#">소고기</a>
+            <a href="#">돼지고기</a>
+            <a href="#">닭고기·계란</a>
+            <a href="#">구이</a>
+            <a href="#">국·찌개</a>
+            <a href="#">볶음·양념</a>
+          </div>
+        </li>
+        <li>
+          <p>생수·음료<i class="xi-angle-down-min"></i></p>
+          <div class="sub-menu">
+            <a href="#">생수·탄산수</a>
+            <a href="#">양파·마늘·고추</a>
+            <a href="#">음료·주스</a>
+            <a href="#">우유·두유·요플레</a>
+            <a href="#">차</a>
+          </div>
+        </li>
+        <li>
+          <p>면·밀키트·간편식<i class="xi-angle-down-min"></i></p>
+          <div class="sub-menu">
+            <a href="#">소면·파스타</a>
+            <a href="#">라면</a>
+            <a href="#">소스·오일</a>
+            <a href="#">밀키트</a>
+            <a href="#">간편식</a>
+          </div>
+        </li>
+        <li>
+          <p>과자·간식<i class="xi-angle-down-min"></i></p>
+          <div class="sub-menu">
+            <a href="#">과자·쿠키</a>
+            <a href="#">사탕·젤리</a>
+            <a href="#">초콜릿</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <!-- Recommend Menu -->
+    <section class="recommend-menu">
+      <h2>추천 메뉴</h2>
+      <ul class="recommend-card-container">
+        <li class="recommend-card" onclick="location.href='#none'">
+          <div>
+            <img src="./images/menu-salad.jpg" alt="추천메뉴-샐러드">
+          </div>
+          <p>다이어트 샐러드</p>
+        </li>
+        <li class="recommend-card" onclick="location.href='#none'">
+          <div>
+            <img src="./images/menu-milk.jpg" alt="추천메뉴-우유">
+          </div>
+          <p>다이어트 샐러드</p>
+        </li>
+        <li class="recommend-card" onclick="location.href='#none'">
+          <div>
+            <img src="./images/menu-curry.jpg" alt="추천메뉴-카레">
+          </div>
+          <p>다이어트 샐러드</p>
+        </li>
+        <li class="recommend-card" onclick="location.href='#none'">
+          <div>
+            <img src="./images/menu-coffee.jpg" alt="추천메뉴-커피">
+          </div>
+          <p>다이어트 샐러드</p>
+        </li>
+      </ul>
+    </section>
+    <!-- Foot Fix Menu -->
+    <section class="foot-menu">
+      <ul>
+        <li>
+          <a href="#none">
+            <i class="xi-home-o"></i>
+            home
+          </a>
+        </li>
+        <li class="active">
+          <a href="#none">
+            <i class="xi-bars"></i>
+            menu
+          </a>
+        </li>
+        <li>
+          <a href="#none">
+            <i class="xi-search"></i>
+            search
+          </a>
+        </li>
+        <li>
+          <a href="#none">
+            <i class="xi-user-o"></i>
+            my
+          </a>
+        </li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>

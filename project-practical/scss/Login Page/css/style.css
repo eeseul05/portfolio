@@ -1,0 +1,182 @@
+@charset "UTF-8";
+/* Google Web Font - Eng : Relaway */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+/* Google Web Font - Kr : Noto Sans KR */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap");
+/* Default CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+  padding: 0 20px;
+}
+
+/* Login Form */
+.container .login-box {
+  width: 100%;
+  max-width: 500px;
+  padding: 45px 40px 25px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 10, 0.1);
+  /* Checkbox Design Custom */
+}
+.container .login-box h1 {
+  font-family: "Relaway", sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+.container .login-box input[type=text],
+.container .login-box input[type=password] {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 15px 10px 35px;
+  font-size: 15px;
+}
+.container .login-box input[type=text]:focus,
+.container .login-box input[type=password]:focus {
+  border-color: #333;
+}
+.container .login-box input[type=text]::placeholder,
+.container .login-box input[type=password]::placeholder {
+  color: #999;
+  transition: 0.35s;
+}
+.container .login-box input[type=text]:focus::placeholder,
+.container .login-box input[type=password]:focus::placeholder {
+  opacity: 0;
+}
+.container .login-box input[type=text] {
+  background: url(../images/icon-user.png) no-repeat center left 5px;
+}
+.container .login-box input[type=password] {
+  background: url(../images/icon-password.png) no-repeat center left 5px;
+}
+.container .login-box .save-login-info {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .login-box .save-login-info label {
+  vertical-align: middle;
+  cursor: pointer;
+  /* 아이디 기억하기 */
+  /* 자동 로그인 */
+}
+.container .login-box .save-login-info label input[type=checkbox] {
+  display: none;
+}
+.container .login-box .save-login-info label input[type=checkbox] + span {
+  display: inline-block;
+}
+.container .login-box .save-login-info label input[id=check-save-id] + span {
+  width: 22px;
+  height: 22px;
+  margin-right: 7px;
+  background-image: url(../images/icon-id-save.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  transform: translateY(5px);
+  transition: 0.35s;
+}
+.container .login-box .save-login-info label input[id=check-save-id]:checked + span {
+  background-image: url(../images/icon-id-save-on.png);
+}
+.container .login-box .save-login-info label input[id=check-auto-login] + span {
+  position: relative;
+  width: 36px;
+  height: 20px;
+  border-radius: 50px;
+  margin: 2px 0 0 7px;
+  background-color: #ccc;
+  transform: translateY(6px);
+}
+.container .login-box .save-login-info label input[id=check-auto-login] + span em {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50px;
+  background-color: #fff;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  transition: 0.35s;
+}
+.container .login-box .save-login-info label input[id=check-auto-login]:checked + span {
+  background-color: #6904a7;
+}
+.container .login-box .save-login-info label input[id=check-auto-login]:checked + span em {
+  left: 19px;
+}
+.container .login-box button {
+  border: none;
+  width: 100%;
+  background-color: #6904a7;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 50px;
+  border-radius: 5px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+.container .login-help {
+  text-align: center;
+  margin-top: 20px;
+}
+.container .login-help li {
+  position: relative;
+  display: inline-block;
+  padding: 0 10px;
+}
+.container .login-help li a {
+  color: #999;
+}
+.container .login-help li::after {
+  content: "";
+  position: absolute;
+  right: -2px;
+  top: 5px;
+  width: 1px;
+  height: 14px;
+  background-color: #999;
+}
+.container .login-help li:last-child::after {
+  background-color: transparent;
+}
+
+/* 반응형 */
+@media screen and (max-width: 400px) {
+  .save-login-info {
+    flex-direction: column;
+  }
+  .save-login-info label:last-child {
+    padding-left: 45px;
+  }
+  .save-login-info label:last-child span {
+    left: -120px;
+  }
+}

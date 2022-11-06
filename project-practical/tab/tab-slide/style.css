@@ -1,0 +1,164 @@
+/* Web Font : Pretendard*/
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css');
+
+/* Reset & Default CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Pretendard', sans-serif;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+body {
+  font-size: 16px;
+  color: #333;
+  font-weight: 300;
+}
+
+/* 제품소개 페이지 */
+header {
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid #ddd;
+}
+header ul {
+  text-align: center;
+}
+header ul li {
+  display: inline-block;
+  margin: 0 45px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 80px;
+}
+header ul li a.on {
+  color: #cf0303;
+}
+section {
+  width: 100%;
+  max-width: 1260px;
+  margin: auto;
+  padding: 50px 30px;
+}
+h2 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.product-wrapper > div {
+  display: inline-block;
+  vertical-align: top;
+  width: 582px;
+}
+.img-slide-container {
+  margin-right: 30px;
+}
+/* img slider */
+input[name=tab-slide] {
+  display: none;
+}
+.slide-contents {
+  width: 582px;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+}
+.slide-inner {
+  width: 1746px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.5s;
+  font-size: 0;
+}
+.content {
+  display: inline-block;
+  width: 582px;
+  height: 350px;
+  background: gray;
+}
+.content img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+.content img:nth-child(3) {
+  object-position: top;
+}
+.buttons {
+  text-align: center;
+  margin-top: 15px;
+}
+.buttons label {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background-color: #d9d9d9;
+  border-radius: 50px;
+  cursor: pointer;
+}
+input[id=slide1]:checked ~ .slide-contents .slide-inner {
+  left: 0;
+}
+input[id=slide2]:checked ~ .slide-contents .slide-inner {
+  left: -582px;
+}
+input[id=slide3]:checked ~ .slide-contents .slide-inner {
+  left: -1164px;
+}
+input[id=slide1]:checked ~ .buttons label[for=slide1],
+input[id=slide2]:checked ~ .buttons label[for=slide2],
+input[id=slide3]:checked ~ .buttons label[for=slide3] {
+  background-color: #cf0303;
+}
+/* text contents */
+h1 {
+  font-size: 34px;
+  font-weight: 500;
+}
+h4 {
+  margin: 30px 0 15px;
+  font-size: 18px;
+  font-weight: 500;
+}
+button {
+  border: none;
+  outline: none;
+  background-color: #cf0303;
+  color: #fff;
+  width: 250px;
+  height: 45px;
+  font-size: 22px;
+  line-height: 45px;
+  border-radius: 3px;
+  margin-top: 20px;
+  float: right;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: #333;
+}
+
+@media screen and (max-width: 1260px) {
+  .product-wrapper > div {
+    display: block;
+  }
+  .img-slide-container {
+    margin: 0 auto 50px;
+  }
+  .product-text-container {
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+  button {
+    float: none;
+  }
+}

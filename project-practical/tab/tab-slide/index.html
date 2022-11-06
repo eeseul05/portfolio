@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tab Slide</title>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <ul>
+      <li><a href="#none">브랜드</a></li>
+      <li><a href="#none" class="on">제품</a></li>
+      <li><a href="#none">PR</a></li>
+      <li><a href="#none">Contact US</a></li>
+    </ul>
+  </header>
+  <section>
+    <h2>제품소개</h2>
+    <div class="product-wrapper">
+      <div class="img-slide-container">
+        <!-- input -->
+        <input type="radio" name="tab-slide" id="slide1" checked>
+        <input type="radio" name="tab-slide" id="slide2">
+        <input type="radio" name="tab-slide" id="slide3">
+
+        <!-- images -->
+        <div class="slide-contents">
+          <div class="slide-inner">
+            <div class="content img1"><img src="./images/kimchi01.jpg"></div>
+            <div class="content img2"><img src="./images/kimchi02.jpg"></div>
+            <div class="content img3"><img src="./images/kimchi03.jpg"></div>
+          </div>
+        </div>
+
+        <!-- buttons -->
+        <div class="buttons">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+        </div>
+      </div>
+      <div class="product-text-container">
+        <h1>싱싱하고 맛있는 배추김치</h1>
+        <h4>제품 특징</h4>
+        <p>
+          싱싱하고 맛있는 국산 배추만을 선별하여 종가의 비법으로 만든 배추김치로,  어느 계절에나 잘 어울립니다.
+        </p>
+        <h4>원료 및 성분</h4>
+        <p>
+          절임배추 55% [배추 98% (국산), 식염 2%], 새우액젓[새우(국산)], 홍고추(국산), 고춧가루(국산), 마늘(국산), 대파(국산), 양파(국산), 생강(국산)
+        </p>
+        <h4>유통기한 30일</h4>
+        <button>구매하기</button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

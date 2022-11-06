@@ -1,0 +1,200 @@
+/* XEICON */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+/* Default CSS */
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  color: #222;
+  background-color: #fff;
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+/* Profile Card Dark Mode */
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+.profile {
+  width: 320px;
+  padding: 50px 30px;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  margin: 8px;
+}
+.face {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  position: relative;
+}
+.face img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.14);
+}
+.face i {
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  font-size: 20px;
+  background-color: deepskyblue;
+  color: #fff;
+  border-radius: 50%;
+}
+.profile h1 {
+  font-size: 26px;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+.profile h1 span {
+  display: block;
+  font-size: 14px;
+  color: #bbb;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+.profile p {
+  margin: 8px
+}
+.profile p span {
+  display: block;
+  color: royalblue;
+}
+.view-portfolio {
+  background-color: #00cec9;
+  color: #fff;
+  padding: 5px 30px;
+  border-radius: 30px;
+  text-transform: capitalize;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+/* SNS */
+.sns {
+  font-size: 0;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+.sns div {
+  font-size: 16px;
+  display: inline-block;
+  width: 30%;
+  margin: 0 1%;
+}
+.sns div i {
+  background-color: red;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  font-size: 2em;
+  line-height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
+}
+.sns div:nth-child(1) i {
+  background-image: linear-gradient(-43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);  
+}
+.sns div:nth-child(2) i {
+  background-image: linear-gradient(-62deg, #FBAB7E 0%, #F7CE68 100%);
+}
+.sns div:nth-child(3) i {
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #005bde 100%);
+}
+.sns div span {
+  font-size: 14px;
+  color: #bbb;
+  display: block;
+  margin-top: 16px;
+  line-height: 22px;
+}
+.sns div span big {
+  display: block;
+  color: #333;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+/* Top buttons */
+.btn-mode,
+.like-more {
+  font-size: 18px;
+}
+.btn-mode {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+.btn-mode::before {
+  content: '\eb0f';
+  font-family: xeicon;
+}
+.like-more {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.btn-like {
+  width: 20px;
+  height: 20px;   
+  display: inline-block; 
+}
+.btn-like::before {
+  content: '\ea11';
+  font-family: xeicon;
+  cursor: pointer;
+}
+.btn-like.active::before {
+  content: '\ea10';
+}
+.btn-more {
+  cursor: pointer;
+}
+
+/* Dark Mode */
+.profile.dark {
+  background-color: #363858;
+}
+.profile.dark .btn-mode,
+.profile.dark .like-more {
+  color: #fff;
+}
+.profile.dark h1 {
+  color: #fff;
+}
+.profile.dark p {
+  color: #fff;
+}
+.profile.dark .sns {
+  border-color: #666;
+}
+.profile.dark .sns div span big {
+  color: #fff;
+}
+.profile.dark .btn-mode::before {
+  content: '\eba3';
+}

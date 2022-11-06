@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tab Menu</title>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./responsible.css">
+</head>
+<body>
+  <section>
+    <h1>지난주 판매량 <span>BEST</span></h1>
+    <div class="tab-container">
+      <!-- input -->
+      <input type="radio" name="tabmenu" id="tab1" checked>
+      <input type="radio" name="tabmenu" id="tab2">
+      <input type="radio" name="tabmenu" id="tab3">
+      <input type="radio" name="tabmenu" id="tab4">
+      <!-- buttons -->
+      <div class="tab-btns">
+        <label for="tab1">적금</label>
+        <label for="tab2">정기예금</label>
+        <label for="tab3">대출</label>
+        <label for="tab4">입출금</label>
+      </div>
+      <!-- content : 적금 -->
+      <ul class="tab-content content1">
+        <li onclick="location.href='#none'">
+          <div class="text-box">
+            <p class="tag">#우대이율</p>
+            <h4>
+              개인 맞춤형 상품<br>
+              내맘대로 모아 적금
+            </h4>
+            <p>
+              최대 36개월 /<br>
+              최고 연 3.75%
+            </p>
+          </div>
+          <img src="./images/icon01.png" alt="">
+        </li>
+        <li onclick="location.href='#none'">
+          <div class="text-box">
+            <p class="tag">#고이율 적금</p>
+            <h4>
+              정액적립식 상품<br>
+              ONE 적금
+            </h4>
+            <p>
+              최대 36개월 /<br>
+              최고 연 4.5%
+            </p>
+          </div>
+          <img src="./images/icon02.png" alt="">
+        </li>
+        <li onclick="location.href='#none'">
+          <div class="text-box">
+            <p class="tag">#단기적금</p>
+            <h4>
+              짧은 기간 목돈 만들기<br>
+              내일 UP 적금
+            </h4>
+            <p>
+              최대 24개월 /<br>
+              최고 연 3.25%
+            </p>
+          </div>
+          <img src="./images/icon03.png" alt="">
+        </li>
+      </ul>
+      <!-- content : 예금 -->
+      <ul class="tab-content content2">
+        <li onclick="location.href='#none'">
+          <div class="text-box">
+            <p class="tag">#인기상품</p>
+            <h4>
+              미래를 위한<br>
+              Star 별빛  정기예금
+            </h4>
+            <p>
+              최대 36개월 /<br>
+              최고 연 4.5%
+            </p>
+          </div>
+          <img src="./images/icon04.png" alt="">
+        </li>
+      </ul>
+      <!-- content : 대출 -->
+      <ul class="tab-content content3">
+        <li onclick="location.href='#none'">
+          <div class="text-box">
+            <p class="tag">#신용대출</p>
+            <h4>
+              국민을 위한<br>
+              내일 미래 대출
+            </h4>
+            <p>
+              최장 10년 /<br>
+              최대 3천만원
+            </p>
+          </div>
+          <img src="./images/icon05.png" alt="">
+        </li>
+        <li onclick="location.href='#none'">
+          <div class="text-box">
+            <p class="tag">#빠른</p>
+            <h4>
+              급한 돈 필요할 떈<br>
+              비상금 대출
+            </h4>
+            <p>
+              최대 1년 /<br>
+              최대 500만원
+            </p>
+          </div>
+          <img src="./images/icon06.png" alt="">
+        </li>
+      </ul>
+      <!-- content : 입출금 -->
+      <ul class="tab-content content4">
+        <li onclick="location.href='#none'">
+          <div class="text-box">
+            <p class="tag">#입출금</p>
+            <h4>
+              다양한 수수료 혜택<br>
+              Star want 통장
+            </h4>
+            <p>
+              수수료 우대 혜택
+            </p>
+          </div>
+          <img src="./images/icon07.png" alt="">
+        </li>
+        <li onclick="location.href='#none'">
+          <div class="text-box">
+            <p class="tag">#입출금</p>
+            <h4>
+              혜택을 내가 원하는대로<br>
+              내맘대로 통장
+            </h4>
+            <p>
+              연1.2%
+            </p>
+          </div>
+          <img src="./images/icon08.png" alt="">
+        </li>
+        <li onclick="location.href='#none'">
+          <div class="text-box">
+            <p class="tag">#입출금</p>
+            <h4>
+              월급통장 필요할 땐<br>
+              One-One 통장
+            </h4>
+            <p>
+              자동이체 수수료 우대
+            </p>
+          </div>
+          <img src="./images/icon01.png" alt="">
+        </li>
+      </ul>
+    </div>
+  </section>
+</body>
+</html>
