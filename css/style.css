@@ -24,7 +24,7 @@ html {
 }
 body {
   color: #fff;
-  background: url(../images/background-img.png) no-repeat;
+  background: url(./../images/background-img.png) no-repeat;
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Pretendard';
@@ -175,21 +175,21 @@ h1 span::after {
 h1::before {
   width: 46px;
   height: 46px;
-  background-image: url(../images/intro-test-light-s.png);
+  background-image: url(./../images/intro-test-light-s.png);
   left: -70px;
   bottom: 100px;
 }
 h1::after {
   width: 74px;
   height: 74px;
-  background-image: url(../images/intro-text-star.png);
+  background-image: url(./../images/intro-text-star.png);
   right: 100px;
   top: -70px;
 }
 h1 span::after {
   width: 54px;
   height: 54px;
-  background-image: url(../images/intro-test-light-l.png);
+  background-image: url(./../images/intro-test-light-l.png);
   right: 180px;
   bottom: -100px;
 }
