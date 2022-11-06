@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>정이슬 | Web Publisher</title>
+  <!-- jqery -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <!-- Featherlight.js -->
+  <link rel="stylesheet" href="./css/featherlight.css">
+  <script src="./js/featherlight.js"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsible.css">
+</head>
+<body>
+  <!-- header -->
+  <header>
+    <a class="icon" href="#"><img src="./images/header-logo.png" alt="로고"></a>
+    <div class="menu-btn icon">
+      <img class="menu-open" src="./images/header-menu.png" alt="메뉴열기">
+      <img class="menu-close" src="./images/header-close.png" alt="메뉴닫기">
+    </div>
+  </header>
+  <!-- menu open -->
+  <section class="menu-section">
+    <div>
+      <h4>menu</h4>
+      <ul>
+        <li><a href="#about">about me</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#practical">practical publishing</a></li>
+        <li><a href="#web-ui">web ui publishing</a></li>
+      </ul>
+    </div>
+  </section>
+  <!-- contents -->
+  <section class="intro">
+    <div class="intro-height"></div>
+    <div class="intro-content">
+      <span class="background-circle"></span>
+      <div class="intro-text">
+        <h1>Web Publisher<br><span>Jeong Eeseul</span></h1>
+      </div>
+      <div class="icon-scroll icon"><img src="./images/icon-scroll.png" alt="스크롤내리기"></div>
+    </div>
+  </section>
+  <section id="about" class="about">
+    <div class="about-me inner">
+      <div class="profile"><img src="./images/profile.png" alt="프로필이미지"></div>
+      <div class="profile-text">
+        <h2 class="section-title section-title-wt">
+          About <b>Me</b>
+        </h2>
+        <p>
+          웹퍼블리싱 분야를 깊이 있게 다져가고자 하는 웹퍼블리셔 정이슬입니다.<br>
+          디자인 된 화면을 웹에 구현하는 것에 큰 재미를 느껴 웹퍼블리싱 공부를 시작했으며, 현재는 <b>인터랙티브 웹 개발</b>에 대한 흥미로 javascript에도 관심을 가지고 공부하고 있습니다.
+          뿐만 아니라 기본이 탄탄한 것이 가장 중요하다는 생각으로 <b>웹표준과 웹접근성을 준수</b>하고, <b>유지보수가 편리한 코딩</b>을 위해 늘 고민하고 있습니다.<br>
+          항상 배우고 탐구하는 자세로 발전해나가는 웹퍼블리셔가 되겠습니다.
+        </p>
+        <!-- 추후 반영 예정
+        <div class="abount-me-links">
+          <a class="go-reseme" href="#none">이력서 보러가기</a>
+          <a class="go-notion" href="#none">공부노트 보러가기</a>
+        </div>
+        -->
+      </div>
+    </div>
+    <div id="skills" class="publishing-skills inner">
+      <h2 class="section-title section-title-wt">
+        What i handle <b>Publishing Skills</b>
+      </h2>
+      <ul class="skill-list">
+        <li>
+          <div><img src="./images/icon-html.png"></div>
+          <h5>HTML5</h5>
+          <p>
+            웹 표준과 웹 접근성을 준수하는 HTML 정보 구조설계로 웹사이트 퍼블리싱을 해오고 있습니다. 특히 웹 표준을 위해 HTML5에서 권장하는 마크업 방식과 시멘틱 태그를 사용해 전체 레이아웃을 설계합니다. 웹사이트를 퍼블리싱 하기 전에는 ‘기능 정의서'를 만들고 기능정의서에 전체적인 폰트 서식, 컬러 가이드, 사이즈 정보, 상호작용 여부, HTML 와이어프레임까지 꼼꼼하게 미리 정리해 놓고 체계적인 퍼블리싱 작업을 수행합니다.
+          </p>
+        </li>
+        <li>
+          <div><img src="./images/icon-css.png"></div>
+          <h5>CSS3</h5>
+          <p>
+            웹 표준을 준수하는 CSS 코딩으로 크로스브라우징 (Cross Browsing)을 위해 안정적인 CSS 속성을 사용해서 HTML Element를 배치하고 디자인합니다. Internet Explorer를 배제하는 경우 CSS3 속성을 적극적으로 활용합니다. CSS 선택자의 코딩 순서는 HTML 순서에 따라 순서에 맞게 코딩하고 적절한 주석을 사용합니다.
+          </p>
+        </li>
+        <li>
+          <div><img src="./images/icon-scss.png"></div>
+          <h5>SCSS(SASS)</h5>
+          <p>
+            현재 CSS가 제공하는 것보다 훨씬 나은 워크 플로우를 위해서 SCSS(SASS)도 익혀가고 있습니다. 아직 SCSS(SASS)를 활용한 충분한 프로젝트 경험은 없지만, 개인 포트폴리오 홈페이지에 SCSS를 사용한 퍼블리싱 결과물이 있습니다. SCSS로 프로젝트를 진행하는 능력이 필요한 경우, 빠르게 적응하여 생산성을 낼 수 있도록 계속해서 공부하고 있습니다.
+          </p>
+        </li>
+        <li>
+          <div>
+            <img src="./images/icon-jquery.png">
+            <img src="./images/icon-javascript.png">
+          </div>
+          <h5>Jquery/Javascript</h5>
+          <p>
+            네비게이션, 탭 메뉴, 어코디언, 모달창 등의 기능은 플러그인을 사용하지 않고 직접 하드 코딩으로 제작합니다. 자바스크립트를 공부하는 데에 흥미를 가지고 있으며 현재 역량이 개발자 수준이 되지는 못하지만 부족한 점을 채우기 위해 계속해서 노력하고 있습니다.
+          </p>
+        </li>
+        <li>
+          <div><img src="./images/icon-responsible.png"></div>
+          <h5>Responsible Web</h5>
+          <p>
+            반응형 웹 제작에 있어서 크로스브라우징(Cross Browsing)을 위해 안정적인 방식인 float, inlinb-block, position, Media Query를 활용한 반응형 웹 제작 경험을 충분히 가지고 있으며, flex와 gird 방식으로도 반응형 웹 사이트 제작이 가능합니다.
+          </p>
+        </li>
+        <li>
+          <div><img src="./images/icon-github.png"></div>
+          <h5>GitHub</h5>
+          <p>
+            인프런에서 <a href="https://www.inflearn.com/course/%ED%8C%80%EA%B0%9C%EB%B0%9C-%EA%B9%83-%EA%B9%83%ED%97%88%EB%B8%8C/dashboard" target="_blank">GitHub 입문 강의</a>를 수강하였습니다. 강의에서 협업 시뮬레이션을 통해 간접적으로나마 Github를 통한 협업을 경험했습니다. 실제로 팀원들과 협업을 경험해본 것은 아니라 부족한 점이 많겠지만 기초적인 개념은 익혔다고 생각합니다. 이를 바탕으로 회사에서 Github를 통한 협업을 필요로 할 경우 빠르게 익히고 적응하도록 노력하겠습니다.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="design-skills inner">
+      <h2 class="section-title section-title-wt">
+        What i handle <b>Design Skills</b>
+      </h2>
+      <ul class="skill-list">
+        <li>
+          <div>
+            <img src="./images/icon-photoshop.png">
+            <img src="./images/icon-illustrator.png">
+          </div>
+          <h5>Photoshop / Illustrator</h5>
+          <p>
+            웹사이트 UI 디자인 작업은 포토샵을 주로 사용하며, 웹 UI 디자인 작업을 위한 포토샵 활용은 능숙하게 사용 가능합니다. 또한 이벤트 디자인, 배너 디자인을 위한 포토샵과 일러스트 활용이 가능합니다.
+          </p>
+        </li>
+        <li>
+          <div><img src="./images/icon-figma.png"></div>
+          <h5>Figma</h5>
+          <p>
+            Figma를 이용한 웹 UI 디자인 작업이 가능합니다. UI 작업에 특화 된 Figma의 세세한 기능들은 조금씩 익혀가고 있습니다.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section id="practical" class="practical-publishing">
+    <div class="inner">
+      <h2 class="section-title section-title-dk">
+        Practical<br><b>Publishing</b>
+      </h2>
+      <div class="tab-container">
+        <!-- tab : inputs -->
+        <input type="radio" name="tab-menu" id="tab01" checked>
+        <input type="radio" name="tab-menu" id="tab02">
+        <input type="radio" name="tab-menu" id="tab03">
+        <input type="radio" name="tab-menu" id="tab04">
+        <input type="radio" name="tab-menu" id="tab05">
+        <!-- tab : buttons -->
+        <div class="tab-buttons">
+          <label for="tab01">Tab Menu</label>
+          <label for="tab02">Card UI</label>
+          <label for="tab03">Hover Effect</label>
+          <label for="tab04">CSS Animation</label>
+          <label for="tab05">SCSS</label>
+        </div>
+        <!-- tab : contents -->
+        <ul class="tab-content content01">
+          <li>
+            <div class="thumbnail"><img src="./images/thumbnail-tab01.png"></div>
+            <h5 class="project-name">스크롤 탭 메뉴</h5>
+            <p class="project-desc">
+              탭 메뉴 클릭시 스크롤이동
+            </p>
+            <a class="view-project" href="./project-practical/tab/tab-scroll/index.html" data-featherlight="iframe">View</a>
+          </li>
+          <li>
+            <div class="thumbnail"><img src="./images/thumbnail-tab02.png"></div>
+            <h5 class="project-name">컨텐츠 탭 메뉴</h5>
+            <p class="project-desc">
+              탭 메뉴 클릭시 내용 변경
+            </p>
+            <a class="view-project" href="./project-practical/tab/tab-menu/index.html" data-featherlight="iframe">View</a>
+          </li>
+          <li>
+            <div class="thumbnail"><img src="./images/thumbnail-tab03.png"></div>
+            <h5 class="project-name">탭 활용</h5>
+            <p class="project-desc">
+              탭 메뉴 원리를 활용한 이미지 슬라이드
+            </p>
+            <a class="view-project" href="./project-practical/tab/tab-slide/index.html" data-featherlight="iframe">View</a>
+          </li>
+        </ul>
+        <ul class="tab-content content02">
+          <li>
+            <div class="thumbnail"><img src="./images/thumbnail-card01.png"></div>
+            <h5 class="project-name">컨텐츠 리스트</h5>
+            <p class="project-desc">
+              컨텐츠형 카드 리스트
+            </p>
+            <a class="view-project" href="./project-practical/card/card-contents/index.html" data-featherlight="iframe">View</a>
+          </li>
+          <li>
+            <div class="thumbnail"><img src="./images/thumbnail-card02.png"></div>
+            <h5 class="project-name">프로필 카드</h5>
+            <p class="project-desc">
+              프로필 카드 UI와 다크모드
+            </p>
+            <a class="view-project" href="./project-practical/card/profile/index.html" data-featherlight="iframe">View</a>
+          </li>
+          <li>
+            <div class="thumbnail"><img src="./images/thumbnail-card03.png"></div>
+            <h5 class="project-name">상품 UI</h5>
+            <p class="project-desc">
+              쇼핑몰 상품 리스트 UI
+            </p>
+            <a class="view-project" href="./project-practical/card/product-list/index.html" data-featherlight="iframe">View</a>
+          </li>
+        </ul>
+        <ul class="tab-content content03">
+          <li>
+            <div class="thumbnail"><img src="./images/thumbnail-hover01.png"></div>
+            <h5 class="project-name">텍스트 호버 이펙트</h5>
+            <p class="project-desc">
+              텍스트 호버 시 위 아래로 분리되는 효과
+            </p>
+            <a class="view-project" href="./project-practical/hover/text-hover/index.html" data-featherlight="iframe">View</a>
+          </li>
+          <li>
+            <div class="thumbnail"><img src="./images/thumbnail-hover02.png"></div>
+            <h5 class="project-name">툴팁</h5>
+            <p class="project-desc">
+              아이콘 호버 시 툴팁 효과
+            </p>
+            <a class="view-project" href="./project-practical/hover/tooltip/index.html" data-featherlight="iframe">View</a>
+          </li>
+          <li>
+            <div class="thumbnail"><img src="./images/thumbnail-hover03.png"></div>
+            <h5 class="project-name">드롭 다운</h5>
+            <p class="project-desc">
+              제품 호버 시 상세 설명이 드롭되는 효과
+            </p>
+            <a class="view-project" href="./project-practical/hover/drop-down/index.html" data-featherlight="iframe">View</a>
+          </li>
+        </ul>
+        <ul class="tab-content content04">
+          <li>
+            <div class="thumbnail"><img src="./images/thumbnail-animation01.png"></div>
+            <h5 class="project-name">Line effect</h5>
+            <p class="project-desc">
+              세 개의 라인이 각각 다르게 움직이는 애니메이션 효과
+            </p>
+            <a class="view-project" href="./project-practical/animation/border/index.html" data-featherlight="iframe">View</a>
+          </li>
+          <li>
+            <div class="thumbnail"><img src="./images/thumbnail-animation02.png"></div>
+            <h5 class="project-name">아이콘 컬러</h5>
+            <p class="project-desc">
+              아이콘의 컬러가 계속 변화하는 애니메이션 효과
+            </p>
+            <a class="view-project" href="./project-practical/animation/text-shadow/index.html" data-featherlight="iframe">View</a>
+          </li>
+          <li>
+            <div class="thumbnail"><img src="./images/thumbnail-animation03.png"></div>
+            <h5 class="project-name">서클 로딩</h5>
+            <p class="project-desc">
+              원 모양으로 돌아가는 로딩 애니메이션
+            </p>
+            <a class="view-project" href="./project-practical/animation/circle-loading/index.html" data-featherlight="iframe">View</a>
+          </li>
+        </ul>
+        <ul class="tab-content content05">
+          <li>
+            <div class="thumbnail"><img src="./images/thumbnail-scss01.png"></div>
+            <h5 class="project-name">로그인 폼</h5>
+            <p class="project-desc">
+              SCSS를 사용한 로그인 폼 UI
+            </p>
+            <a class="view-project" href="./project-practical/scss/Login Page/index.html" data-featherlight="iframe">View</a>
+          </li>
+          <li>
+            <div class="thumbnail"><img src="./images/thumbnail-scss02.png"></div>
+            <h5 class="project-name">아코디언 메뉴</h5>
+            <p class="project-desc">
+              SCSS를 사용한 아코디언 메뉴
+            </p>
+            <a class="view-project" href="./project-practical/scss/Menu Category/index.html" data-featherlight="iframe">View</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="web-ui" class="web-ui-publishing">
+    <div class="inner">
+      <h2 class="section-title section-title-dk">
+        Web UI<br><b>Publishing</b>
+      </h2>
+      <ul class="project-list-container">
+        <li>
+          <div class="thumbnail"><img src="./images/thumbnail-web-sweetme.png"></div>
+          <h5 class="project-name">스윗미</h5>
+          <p class="project-desc">
+            #모바일 웹 #터치 슬라이드
+          </p>
+          <a class="view-project" href="./pjoject-web/earth-care/index.html" target="_blank">View</a>
+          <a class="view-project" href="https://aspiring-cartoon-826.notion.site/STUDY-WITH-ME-717863a6dd724ea7bf521dd77b41b615" target="_blank">제작노트</a>
+        </li>
+        <li>
+          <div class="thumbnail"><img src="./images/thumbnail-web-randing.png"></div>
+          <h5 class="project-name">스윗미 홍보페이지</h5>
+          <p class="project-desc">
+            #반응형 #탭 메뉴 #반응형 슬라이드
+          </p>
+          <a class="view-project" href="./pjoject-web/randing/index.html" target="_blank">View</a>
+          <a class="view-project" href="https://aspiring-cartoon-826.notion.site/724d5b078af54909adaab579dd0ce84f" target="_blank">제작노트</a>
+        </li>
+        <li>
+          <div class="thumbnail"><img src="./images/thumbnail-web-earth.png"></div>
+          <h5 class="project-name">지구돌봄</h5>
+          <p class="project-desc">
+            #반응형 #스크롤 애니메이션
+          </p>
+          <a class="view-project" href="./pjoject-web/earth-care/index.html" target="_blank">View</a>
+          <a class="view-project" href="https://aspiring-cartoon-826.notion.site/cb8ad246afa843d0b0a30e5b704263c0" target="_blank">제작노트</a>
+        </li>
+        <li>
+          <div class="thumbnail"><img src="./images/thumbnail-web-wedding.png"></div>
+          <h5 class="project-name">모바일 청첩장</h5>
+          <p class="project-desc">
+            #모바일 웹 #눈내리기 #복사버튼 #bgm #D-day
+          </p>
+          <a class="view-project" href="./pjoject-web/wedding/index.html" target="_blank">View</a>
+          <a class="view-project" href="https://aspiring-cartoon-826.notion.site/2651674ac0bd488199e10653f0e60ae7" target="_blank">제작노트</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer>
+    <h6>Thank you for visit.</h6>
+    <p>Copyright©2022 All Rights Reserved.</p>
+  </footer>
+
+  <!-- Custom JS -->
+  <script src="./js/index.js"></script>
+</body>
+</html>
