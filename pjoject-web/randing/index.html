@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- XEICON CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <!-- Scroll Trigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.5/ScrollTrigger.min.js"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <title>스윗미 | 나에게 딱 맞는 스터디</title>
+</head>
+<body>
+  <header>
+    <div class="header-wrapper">
+      <img class="logo" src="./images/header-logo.png" alt="logo">
+      <div class="mobile-menubox">
+        <input type="checkbox" id="mobile-menu-trigger" />
+        <label for="mobile-menu-trigger">
+          <i class="xi-bars"></i>
+        </label>
+        <div>
+          <a href="#none">바로가기</a>
+          <a href="#none">공유하기</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="visual-section">
+    <div class="wrapper">
+      <div class="visual-text-content">
+        <h1>
+          나에게 딱 맞는<br>
+          스터디! 스윗미에서<br>
+          찾아보세요
+        </h1>
+        <p>
+          혼자서는 어려운 공부. 함께할 사람들이<br>
+          필요하다면 스윗미에서 찾아보세요.
+        </p>
+      </div>
+      <div class="visual-imgbox">
+        <img src="./images/visual-img1.png" alt="스윗미이미지">
+        <img src="./images/visual-img2.png" alt="스윗미이미지">
+      </div>
+    </div>
+  </section>
+  <section class="introduce section-gray">
+    <div class="wrapper">
+      <h2 class="section-title">스윗미란?</h2>
+      <p class="section-title-sub">
+        <b>나에게 딱 맞는 스터디, 스윗미</b>는 오프라인 스터디 플랫폼입니다.
+        주제, 지역, 시간대 등 원하는 조건을 설정하여 손쉽게 스터디를 찾을 수 있으며,
+        직접 스터디를 만들어 스터디원들을 모집할 수도 있습니다.<br>
+        스윗미에서 나에게 딱 맞는 스터디를 찾아보세요!
+      </p>
+      <img src="./images/sec2-img.png" alt="스윗미-화면이미지">
+    </div>
+  </section>
+  <section class="how-use">
+    <h2 class="section-title">이용방법</h2>
+    <div class="tab-container wrapper">
+      <input type="radio" name="tabmenu" id="tab1" checked>
+      <input type="radio" name="tabmenu" id="tab2">
+      <input type="radio" name="tabmenu" id="tab3">
+      <input type="radio" name="tabmenu" id="tab4">
+      <!-- 이미지 -->
+      <div class="tab-img tab-img1" data-trigger><img src="./images/use1.png" alt="추천스터디-화면"></div>
+      <div class="tab-img tab-img2"><img src="./images/use2.png" alt="스터디-상세내용-화면"></div>
+      <div class="tab-img tab-img3"><img src="./images/use3.png" alt="스터디장-대화화면"></div>
+      <div class="tab-img tab-img4"><img src="./images/use4.png" alt="나의스터디-화면"></div>
+      <!-- 버튼 -->
+      <div class="tab-btn">
+        <label for="tab1">메인화면</label>
+        <label for="tab2">상세보기</label>
+        <label for="tab3">대화하기</label>
+        <label for="tab4">나의 스터디</label>
+      </div>
+      <!-- 내용 -->
+      <p class="tab-content tab-content1">
+        스윗미의 메인화면에서는 사용자의 지역, 관심사 등을 분석하여 스터디 그룹을 추천해드리는 추천스터디와
+        주제별, 지역별 스터디 등 다양한 스터디 정보를 한 눈에 확인할 수 있습니다.
+      </p>
+      <p class="tab-content tab-content2">
+        목록에서 스터디를 클릭하면 해당 스터디에 대한 상세한 내용 확인과 
+        스터디장과의 대화, 스터디 참여 신청이 가능합니다.
+      </p>
+      <p class="tab-content tab-content3">
+        궁금한 점이 있으면 스터디장에게 대화를 걸어 확인해보세요!
+      </p>
+      <p class="tab-content tab-content4">
+        나의 스터디 목록에서 참여 중인 스터디를 확인할 수 있습니다.
+      </p>
+
+      
+    </div>
+  </section>
+  <section class="preview section-gray">
+    <div class="wrapper">
+      <h2 class="section-title">스윗미 스터디 둘러보기</h2>
+      <p class="section-title-sub">스윗미에서 실제로 모집중인 스터디들을 미리 살펴보세요.</p>
+      <div class="slide-wrapper">
+        <div class="items">
+          <div>
+            <div class="item"><img src="./images/slide-img1.png" alt="진행중인-스터디1"></div>
+            <div class="item"><img src="./images/slide-img2.png" alt="진행중인-스터디2"></div>
+            <div class="item"><img src="./images/slide-img3.png" alt="진행중인-스터디3"></div>
+            <div class="item"><img src="./images/slide-img4.png" alt="진행중인-스터디4"></div>
+            <div class="item"><img src="./images/slide-img5.png" alt="진행중인-스터디5"></div>
+            <div class="item"><img src="./images/slide-img6.png" alt="진행중인-스터디6"></div>
+          </div>
+        </div>
+        
+        <div class="slidebar">
+          <span></span>
+        </div>
+        <div class="slide-buttons">
+          <button class="slide-left"><i class="xi-angle-left"></i></button>
+          <button class="slide-right"><i class="xi-angle-right"></i></button>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  <section class="go-sweetme">
+    <h3>스윗미에 대해 더 알아보고 싶으신가요?</h3>
+    <button onclick="location.href='#none'">스윗미 바로가기</button>
+  </section>
+  <footer>
+    <div class="wrapper">
+      <h4>스윗미 STUDY WITH ME</h4>
+      <p>
+        위 페이지는 웹퍼블리셔 포트폴리오를 목적으로 만들어진 페이지로, 스윗미는 실제로 운여되고 있는 서비스가 아닙니다.<br>
+        12543 서울특별시 강남구 가상의 주소입니다.
+        통신판매업 신고번호 : 2020-가상의-112233-번호입니다.
+        고객센터 : 1234-4321 | 서울특별시 강남구 가상의 주소입니다.
+      </p>
+      <ul>
+        <li><a href="#none"><i class="xi-instagram"></i></a></li>
+        <li><a href="#none"><i class="xi-facebook"></i></a></li>
+        <li><a href="#none"><i class="xi-youtube-play"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- Custom JS -->
+  <script src="./js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+.scroll-effect {
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: 0.5s;
+}
+.scroll-effect.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+/*** 인트로 섹션 ***/
+.intro-section p.scroll-effect.on {
+  transition-delay: 0.2s;
+}
+/*** 인트로 텍스트 섹션 ***/
+.intro-text .scroll-effect.on {
+  transition-delay: 0.4s;
+}

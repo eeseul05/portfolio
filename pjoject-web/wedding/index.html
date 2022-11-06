@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/scroll-effect.css">
+  <!-- Favicon Image -->
+  <link rel="shortcut icon" href="./images/favicon.png">
+  <title>정정우♥한유리 결혼합니다</title>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Audio -->
+    <div class="audio">
+      <div class="bgmBtn off"></div>
+    </div>
+    <!-- Section : intro -->
+    <section class="intro-section">
+      <div class="text-area">
+        <h1 class="scroll-effect">정정우 ♡ 한유리</h1>
+        <p class="scroll-effect">2022년 12월 3일 토요일 오후 5시</p>
+      </div>
+      <div class="visual-img-frame">
+        <div class="snows"></div>
+        <img src="./images/wedding01.jpg" alt="메인이미지">
+      </div>
+    </section>
+    <!-- Section : intro-text -->
+    <section class="intro-text">
+      <img class="scroll-effect" src="./images/point-img.png">
+      <p class="scroll-effect">
+        사랑하지 않고 스쳐 갈 수도 있었는데<br>
+        사랑일지도 모른다고 걸음을 멈춰준<br>
+        그 사람이 정녕 고맙다고<br><br>
+        -양귀자, <모순>-<br><br>
+      </p>
+      <h3 class="section-title scroll-effect">초대합니다</h3>
+      <p class="scroll-effect">
+        서로 아끼고 사랑하며 함께 맞이하는<br>
+        아홉 번째의 어느 찬란하고 빛나는 겨울날,<br>
+        부부의 연을 맺어 하나가 되고자 합니다.<br>
+        그 시작의 자리에 소중한 걸음으로<br>
+        축복해 주시면 감사하겠습니다.
+      </p>
+    </section>
+    <!-- Section : Groom and bride -->
+    <section class="groom-and-bride">
+      <div>
+        <img src="./images/wedding03.jpg" alt="">
+      </div>
+      <h2 class="scroll-effect"><b>정&emsp;철 · 박미숙</b>의 아들<b>정우</b></h2>
+      <h2 class="scroll-effect"><b>한성주 · 조영희</b>의 <span class="bride-margin">딸</span><b>유리</b></h2>
+      <button id="click-contact" class="scroll-effect">혼주에게 연락하기</button>
+    </section>
+    <!-- Section : Wedding day -->
+    <section class="wedding-day">
+      <div class="text-area">
+        <h3 class="section-title scroll-effect">12월 3일</h3>
+        <h4 class="scroll-effect">토요일 오후 5시</h4>
+        <table class="calendar">
+          <thead>
+            <tr>
+              <th class="sun">S</th>
+              <th>M</th>
+              <th>T</th>
+              <th>W</th>
+              <th>T</th>
+              <th>F</th>
+              <th class="sat">S</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="sun"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>1</td>
+              <td>2</td>
+              <td><span class="calendar-d-day">3</span></td>
+            </tr>
+            <tr>
+              <td class="sun">4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+              <td>8</td>
+              <td>9</td>
+              <td class="sat">10</td>
+            </tr>
+            <tr>
+              <td class="sun">11</td>
+              <td>12</td>
+              <td>13</td>
+              <td>14</td>
+              <td>15</td>
+              <td>16</td>
+              <td class="sat">17</td>
+            </tr>
+            <tr>
+              <td class="sun">18</td>
+              <td>19</td>
+              <td>20</td>
+              <td>21</td>
+              <td>22</td>
+              <td>23</td>
+              <td class="sat">24</td>
+            </tr>
+            <tr>
+              <td class="sun">25</td>
+              <td>26</td>
+              <td>27</td>
+              <td>28</td>
+              <td>29</td>
+              <td>30</td>
+              <td class="sat">31</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="d-day-info text-area scroll-effect">
+          정우<span>♥</span>유리의 결혼식이 
+          <span id="d-day"></span> 
+          <em id="d-day-text"></em>
+        </p>
+      </div>      
+    </section>
+    <!-- Section : Gallary -->
+    <section class="gallary">
+      <h3 class="section-title scroll-effect">갤러리</h3>
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./images/wedding02.jpg"></div>
+          <div class="swiper-slide"><img src="./images/wedding03.jpg"></div>
+          <div class="swiper-slide"><img src="./images/wedding01.jpg"></div>
+          <div class="swiper-slide"><img src="./images/wedding04.jpg"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- Section : Lacation -->
+    <section class="location">
+      <div class="address text-area">
+        <h3 class="section-title scroll-effect">오시는 길</h3>
+        <h4 class="scroll-effect">오펠리스 라비제홀 (20F)</h4>
+        <p class="scroll-effect">서울특별시 중구 세종대로9길 41 (서소문동 135)<br>
+          <span class="scroll-effect">02-2130-2330~3</span>
+        </p>
+      </div>
+      <div class="map">
+        <!-- 카카오 맵 -->
+        <div 
+          id="daumRoughmapContainer1666539144348" 
+          class="root_daum_roughmap root_daum_roughmap_landing" 
+          style="width:100%;"
+        >
+        </div>
+        <!-- 카카오 맵 end -->
+        <p class="open-map">
+          <a href="http://kko.to/rLK2m3JtpR" target="_blank">지도를 자세히 보려면 여기를 눌러주세요.</a>
+        </p>
+      </div>
+      <div class="directions text-area">
+        <!-- 지하철 -->
+        <h5>지하철</h5>
+        <p>
+          [1호선, 2호선] <b>시청역</b> 9번 출구 (도보 3분)
+        </p>
+        <!-- 버스 -->
+        <h5>버스</h5>
+        <p><b>시청 앞</b> 또는 <b>삼성플라자</b> 하차</p>
+        <ul class="bus-info">
+          <li>[간선버스]</li>
+          <li>150, 263, 406, 408, 504, 507, 603, 604, 700</li>
+        </ul>
+        <ul class="bus-info">
+          <li>[지선버스]</li>
+          <li>1711, 7011, 7016, 7019, 7022</li>
+        </ul>
+        <ul class="bus-info">
+          <li>[광역버스]</li>
+          <li>1000, 1005-1, 1200, 1500, 1900, 2000, 5000, 5005, 8880, 9000, 9080, 9401, 9409, 9703, 9709, 9714</li>
+        </ul>
+        <!-- 주차 -->
+        <h5>주차</h5>
+        <p>퍼시피타워 지하주차장 이용 (3시간 무료주차 가능)</p>
+      </div>
+    </section>
+    <!-- Section : Account information -->
+    <section class="account-information">
+      <img class="scroll-effect" src="./images/point-img.png">
+      <h3 class="section-title scroll-effect">마음 전하실 곳</h3>
+      <ul>
+        <!-- 신랑측 -->
+        <li>
+          <p class="account-slide-btn">신랑측 계좌번호<i class="xi-angle-down-min"></i></p>
+          <div class="account-list-container">
+            <!-- 계좌번호 01 -->
+            <div class="account-box">
+              <div>
+                정 철
+                <p>기업은행 111-11-1111</p>
+              </div>
+              <div class="buttons">
+                <button class="btn-copy" value="111111111">복사하기</button>
+              </div>
+            </div>
+            <!-- 계좌번호 02 -->
+            <div class="account-box">
+              <div>
+                정정우
+                <p>우리은행 222-22-2222</p>
+              </div>
+              <div class="buttons">
+                <button class="btn-copy" value="222222222">복사하기</button>
+                <button class="kakao-pay" onclick="location.href='https://qr.kakaopay.com/FL6eewI3W'">
+                  <img src="./images/paylogo.png" alt="카카오페이송금하기">
+                  pay
+                </button>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- 신부측 -->
+        <li>
+          <p class="account-slide-btn">신부측 계좌번호<i class="xi-angle-down-min"></i></p>
+          <div class="account-list-container">
+            <!-- 계좌번호 03 -->
+            <div class="account-box">
+              <div>
+                한성주
+                <p>국민은행 333-33-3333</p>
+              </div>
+              <div class="buttons">
+                <button class="btn-copy" value="333333333">복사하기</button>
+              </div>
+            </div>
+            <!-- 계좌번호 04 -->
+            <div class="account-box">
+              <div>
+                한유리
+                <p>카카오뱅크 444-44-4444</p>
+              </div>
+              <div class="buttons">
+                <button class="btn-copy" value="444444444">복사하기</button>
+                <button class="kakao-pay" onclick="location.href='https://qr.kakaopay.com/FL6eewI3W'">
+                  <img src="./images/paylogo.png" alt="카카오페이송금하기">
+                  pay
+                </button>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div>
+        <span class="sociallink ml-1">
+          <a href="javascript:sendLinkKakao()" id="kakao-link-btn" title="카카오톡으로 공유">
+            <span><img src="./images/footer-kakao.png"></span>
+            <p>카카오톡으로 공유하기</p>
+          </a>
+        </span>
+      </div>
+      <button class="btn-copy link-copy" value="청첩장주소입니다">
+        <i class="xi-link"></i>청첩장 <b>주소</b> 복사하기
+      </button>
+      <p class="copyright">
+        Copyright 2022. All rights reserved.
+      </p>
+    </footer>
+  </div>
+  
+  <!-- Modal : 혼주에게 연락하기 -->
+  <div class="contact-modal">
+    <div class="modal-bg"></div>
+    <div class="modal-box">
+      <h6>혼주에게 연락하기</h6>
+      <ul class="groom-contact">
+        <li>
+          <div>신랑 父</div>
+          <div>정&emsp;&emsp;철</div>
+          <div>
+            <a href="tel:01000000000"><i class="xi-call"></i></a>
+            <a href="sms:01000000000"><i class="xi-mail"></i></a>
+          </div>
+        </li>
+        <li>
+          <div>신랑 母</div>
+          <div>박 미 숙</div>
+          <div>
+            <a href="tel:01011111111"><i class="xi-call"></i></a>
+            <a href="sms:01011111111"><i class="xi-mail"></i></a>
+          </div>
+        </li>
+      </ul>
+      <ul class="bride-contact">
+        <li>
+          <div>신부 父</div>
+          <div>한 성 주</div>
+          <div>
+            <a href="tel:01022222222"><i class="xi-call"></i></a>
+            <a href="sms:01022222222"><i class="xi-mail"></i></a>
+          </div>
+        </li>
+        <li>
+          <div>신부 母</div>
+          <div>조 영 희</div>
+          <div>
+            <a href="tel:01033333333"><i class="xi-call"></i></a>
+            <a href="sms:01033333333"><i class="xi-mail"></i></a>
+          </div>
+        </li>
+      </ul>
+      <span class="modal-close"><i class="xi-close-circle-o"></i></span>
+    </div>
+  </div>
+
+  <!-- Scroll Magic -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <!-- Kakao Developer -->
+  <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+  <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="./index.js"></script>
+</body>
+</html>

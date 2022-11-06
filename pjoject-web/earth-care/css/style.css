@@ -1,0 +1,503 @@
+/*** Web Font - Gangwon Edu Power ***/
+@font-face {
+  font-family: 'GangwonEduPowerExtraBoldA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/*** Web Font - Noto Sans KR ***/
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*** Reset & Common CSS ***/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+  letter-spacing: -1px;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  color: #222;
+  font-weight: 300;
+  height: auto;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+.content-section {
+  padding: 80px 0;
+  text-align: center;
+}
+.wrapper {
+  max-width: 1280px;
+  margin: auto;
+}
+h2.setcion-title {
+  font-size: 38px;
+  font-weight: 300;
+}
+h2.setcion-title strong {
+font-weight: 400;
+}
+p.setcion-title-desc {
+  font-size: 20px; 
+  line-height: 1.7em;
+  margin: 15px 0 50px;
+}
+p.setcion-title-desc b {
+  color:#00a491;
+  font-weight: 500;
+}
+.image-container {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+.crisis-sections,
+.activity-section {
+  background-color: #f9f9f9;
+}
+
+/*** Header ***/
+header {
+  background-color: #fff;
+  text-align: center;
+  width: 100%;
+}
+.header-top {
+  border-bottom: 1px solid #d9d9d9;
+  position: relative;
+  padding: 30px 0 20px;
+}
+.header-top a {
+  display: inline-block;
+}
+.header-top a img {
+  width: 100%;
+}
+.header-sns {
+  position: absolute;
+  right: 160px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0;
+}
+.header-sns a {
+  font-size: 20px;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  padding-top: 4px;
+  border-radius: 50px;
+  margin-left: 12px;
+  border: 1px solid #999;
+  color: #999;
+}
+.header-sns a  i {
+  vertical-align: middle;
+}
+nav {
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+  position: sticky;
+  top: 0;
+  z-index: 111;
+}
+nav a {
+  display: inline-block;
+  width: 150px;
+  height: 52px;
+  font-size: 20px;
+  line-height: 52px;
+}
+nav a:hover {
+  font-weight: 400;
+}
+nav a.active {
+  color: #1bbaa8;
+  font-weight: 400;
+  border-bottom: 3px solid #1bbaa8;
+}
+
+/*** Section - Visual ***/
+.visual {
+  width: 100%;
+  height: 75vh;
+  background-color: #000;
+  position: relative;
+}
+.visual img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  opacity: 0.35;
+}
+.visual div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+}
+.visual div .visual-sub-title {
+  font-size: 32px;
+  font-weight: 500;
+}
+.visual h1 {
+  font-size: 80px;
+  font-family: 'GangwonEduPowerExtraBoldA';
+  letter-spacing: 0;
+  margin: 20px 0 30px;
+  padding-bottom: 5px;
+  position: relative;
+}
+.visual h1::after {
+  content: '';
+  width: 100px;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+/*** Section : Crisis ***/
+.climate-crisis-list {
+  display: flex;
+}
+.climate-crisis-list li {
+  width: 33.3%;
+  margin: 0 10px;
+}
+#crisis .image-container {
+  border-radius: 10px;
+}
+.image-container img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+.climate-crisis-list li p {
+  font-size: 24px;
+  color: #00a491;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+/*** Section : Activity ***/
+.campaign-activities-list {
+  display: flex;
+}
+.campaign-activities-list li {
+  width: 25%;
+  margin: 0 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.activities-list-content {
+  padding: 20px;
+  text-align: left;
+  line-height: 1.5em;
+  color: #777;
+  position: relative;
+  min-height: 220px;
+}
+.activities-list-content h3 {
+  font-size: 20px;
+  color: #00a491;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+.activities-list-content a {
+  color: #00a491;
+  font-weight: 400;
+  border: 1px solid #00a491;
+  border-radius: 50px; 
+  padding: 5px 25px;
+  vertical-align: middle;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  transition: 0.3s;
+}
+.activities-list-content a:hover {
+  background-color: #00a491;
+  color: #fff;
+}
+.activities-list-content a i {
+  color: #00a491;
+  display: inline-block;
+  margin-left: 5px;
+  transition: 0.3s;
+}
+.activities-list-content a:hover i {
+  color: #fff;
+}
+
+/*** Section : Support ***/
+.support-section {
+  background: url(./../images/support-bg.png) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  padding: 0;
+}
+.support-section > div {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 80px 0;
+}
+.support-section p.setcion-title-desc {
+  margin-bottom: 35px;
+}
+.support-button {
+  display: inline-block;
+  padding: 10px 50px;
+}
+.main-button {
+  border-radius: 50px;
+  background-color: #1bbaa8;
+  color: #fff;
+  font-size: 23px;
+  font-weight: 400;
+  transition: 0.3s;
+}
+.main-button:hover {
+  background-color: #222;
+}
+
+/*** Section : Subscription ***/
+.subscription-section {
+  background-color: #eef2f2;
+}
+form {
+  width: 100%;
+  background-color: #ecf4f3;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 40px 80px;
+  font-size: 0;
+  text-align-last: left;
+}
+form div {
+  font-size: 18px;
+  display: inline-block;
+  width: 50%;
+  padding: 10px;
+}
+form div:nth-child(3),
+form div:nth-child(4) {
+  width: 100%;
+}
+form p {
+  margin-bottom: 8px;
+}
+form div input:not(input[type=checkbox]) {
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  height: 40px;
+  width: 100%;
+  padding: 12px;
+  color: #777;
+  font-size: 16px;
+  outline: none;
+}
+form div input:not(input[type=checkbox]):focus {
+  border: 1px solid #1bbaa8;
+}
+.personal-info label {
+  cursor: pointer;
+}
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  background: url(./../images/checkbox.png) no-repeat;
+  background-position: left;
+  transform: translateY(4px);
+}
+input[type="checkbox"]:checked + span {
+  background-position: right;
+}
+input[type="submit"] {
+  display: block;
+  margin: auto;
+  padding: 10px 70px;
+  border: none;
+  cursor: pointer;
+}
+
+/*** Footer ***/
+footer {
+  text-align: center;
+  padding: 68px 0;
+  color: #6c6c6c;
+}
+footer h4 {
+  font-family: 'GangwonEduPowerExtraBoldA';
+  font-size: 34px;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+footer ul li a {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  background-color: #d9d9d9;
+  color: #222;
+  text-align: center;
+  line-height: 45px;
+  font-size: 20px;
+  margin: 8px 8px 28px;
+}
+footer hr {
+  border: 1px solid #d9d9d9;
+  margin-bottom: 28px;
+}
+
+/*** 반응형 ~1300 ***/
+@media screen and (max-width: 1300px) {
+  form {
+    width: 92%;
+    margin: auto;
+  }
+}
+/*** 반응형 ~1024 ***/
+@media screen and (max-width: 1024px) {
+  .header-top {
+    padding-bottom: 5px;
+  }
+  .header-logo {
+    width: 180px;
+  }
+  .header-sns {
+    position: relative;
+    right: 0;
+    margin-top: 22px;
+  }
+  .header-sns a {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    padding-top: 2px;
+  }
+  nav a {
+    font-size: 15px;
+    width: 120px;
+    height: 46px;
+  }
+  p.setcion-title-desc {
+    padding: 0 15px;
+  }
+  .campaign-activities-list {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  .campaign-activities-list li {
+    width: 46%;
+    margin-bottom: 15px;
+  }
+  form div {
+    width: 100%;
+  }
+  footer ul li a {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+    line-height: 35px;
+  }
+}
+/*** 반응형 ~750 ***/
+@media screen and (max-width: 750px) {
+  nav a {
+    width: 30%;
+  }
+  .visual div {
+    font-size: 20px;
+  }
+  .visual div .visual-sub-title {
+    font-size: 26px;
+  }
+  .visual h1 {
+    font-size: 50px;
+  }
+  h2.setcion-title {
+    font-size: 30px;
+  }
+  p.setcion-title-desc {
+    font-size: 18px;
+  }
+  .climate-crisis-list {
+    flex-direction: column;
+  }
+  .climate-crisis-list li {
+    width: 92%;
+    margin: 0 3% 15px;
+  }
+  #action img {
+    width: 80%;
+    max-width: 450px;
+  }
+  .campaign-activities-list li {
+    width: 92%;
+  }
+  form div {
+    font-size: 16px;
+  }
+  .main-button {
+    font-size: 20px;
+  }
+  form {
+    padding: 25px 30px;
+  }
+  footer p {
+    padding: 0 15px;
+  }
+}
+
+/*** Scroll Animation Event ***/
+.scroll-up {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 0.5s;
+}
+.scroll-up.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+.visual .visual-sub-title.on {
+  transition-delay: 0;
+}
+.visual h1.on {
+  transition-delay: 0.2s;
+}
+.visual .visual-desc.on {
+  transition-delay: 0.4s;
+}
+.setcion-title-desc.on {
+  transition-delay: 0.2s;
+}

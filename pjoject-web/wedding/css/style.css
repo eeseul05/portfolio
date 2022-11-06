@@ -1,0 +1,558 @@
+/*** XEICON CDN ***/
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+/*** Web Font - RIDI Batang ***/
+@font-face {
+  font-family: 'RIDIBatang';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*** Default & Common CSS ***/
+* {
+  font-family: 'RIDIBatang';
+  margin: 0;
+  top: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+body {
+  color: #555;
+  font-size: 17px;
+  line-height: 2em;
+  background-color: rgba(0, 0, 0, 0.85)
+}
+body.modal-active {
+  overflow: hidden;
+}
+ul {
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #555;
+}
+button {
+  outline: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+section {
+  padding: 50px 0;
+}
+.section-title {
+  color:#c28e79;
+  font-size: 24px;
+}
+.text-area {
+  padding: 0 7%;
+}
+
+/*** Audio ***/
+.audio {
+  position: fixed;
+  width: 100%;
+  max-width: 500px;
+  height: 60px;
+}
+.bgmBtn {
+  display: inline-block;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+}
+.bgmBtn::after {
+  font-family: XEICON;
+  font-size: 36px;
+  color: #a3a3a3;
+}
+.bgmBtn.on::after {
+  content: '\ea5b';
+}
+.bgmBtn.off::after {
+  content: '\eb39';
+}
+/*** Section : Intro ***/
+.intro-section .text-area {
+  padding-bottom: 35px;
+}
+h1 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  padding-top: 30px;
+}
+.visual-img-frame {
+  width: 100%;
+  height: 420px;
+  position: relative;
+}
+.visual-img-frame .snows {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.snow {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 8px #fff,
+              0 0 10px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  animation: snow 7s linear infinite;
+  opacity: 0;
+}
+.snow:nth-of-type(2n) {
+  width: 6px;
+  height: 6px;
+  animation-duration: 9s;
+  animation-delay: 1s;
+}
+.snow:nth-of-type(5n) {
+  width: 5px;
+  height: 5px;
+  animation-duration: 7s;
+  animation-delay: 2s;
+}
+.snow:nth-of-type(20n) {
+  width: 12px;
+  height: 12px;
+  animation-duration: 8.5s;
+  animation-delay: 2s;
+}
+.visual-img-frame img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+@keyframes snow {
+  0% {
+    opacity: 0.2;
+    transform: translate(0px, -100px);
+  }
+  20% {
+    opacity: 0.3;
+    transform: translate(10px, 0px);
+  }
+  40% {
+    opacity: 0.35;
+    transform: translate(0, 133px);
+  }
+  60% {
+    opacity: 0.4;
+    transform: translate(-15px, 266px);
+  }
+  100% {
+    opacity: 0.5;
+    transform: translate(-5px, 400px);
+  }
+}
+/*** Section : Intro text ***/
+.intro-text {
+  padding-top: 50px;
+}
+.intro-text img {
+  display: block;
+  margin: 0 auto 40px;
+}
+.intro-text .section-title {
+  margin: 24px 0;
+}
+/*** Groom and bride ***/
+.groom-and-bride {
+  padding: 0;
+  margin-top: 70px;
+  background-color: #f1ebe8;
+}
+.groom-and-bride div {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 30px;
+}
+.groom-and-bride div img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+.groom-and-bride h2 {
+  font-weight: normal;
+  font-size: 16px;
+  color: #888;
+}
+.groom-and-bride h2 b {
+  font-size: 19px;
+  color: #555;
+  font-weight: 600;
+  margin: 0 8px;
+  font-weight: normal;
+}
+.groom-and-bride h2 .bride-margin {
+  margin: 0 8px;
+}
+.groom-and-bride button {
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #c28e79;
+  color: #c28e79;
+  font-size: 17px;
+  width: 65%;
+  min-width: 280px;
+  padding: 6px;
+  margin: 30px 0 80px; 
+  cursor: pointer;
+  transition: 0.3s;
+}
+/*** Wedding day ***/
+.wedding-day {
+  padding: 80px 0;
+}
+.wedding-day h4 {
+  margin: 5px 0 25px;
+}
+.calendar {
+  border-top: 1px solid #cfbab1;
+  border-bottom: 1px solid #cfbab1;
+  padding: 15px 0;
+  margin: auto;
+  width: 90%;
+  margin-bottom: 30px;
+}
+.calendar .sun {
+  color: rgb(255, 88, 88);
+}
+.calendar td {
+  width: 55px;
+  height: 55px;
+}
+.calendar .calendar-d-day {
+  background-color: #c28e79;
+  color: #fff;
+  display: inline-block;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+}
+.d-day-info {
+  margin-top: 15px;
+}
+.d-day-info span {
+  color: rgb(255, 88, 88);
+}
+.d-day-info em {
+  font-style: normal;
+}
+/*** Gallary ***/
+.gallary {
+  position: relative;
+  height: 100%;
+}
+.gallary h3 {
+  margin-bottom: 30px;
+}
+.swiper {
+  width: 100%;
+  height: 550px;
+  position: relative;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide img {
+  display: block;
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+.swiper-pagination {
+  height: 40px;
+  position: absolute;
+  left: 0;
+  top: 92%;
+}
+.swiper-pagination-bullet-active {
+  background: rgb(255, 88, 88);
+}
+/*** Location ***/
+.location h4 {
+  font-weight: 600;
+  margin: 30px 0 5px;
+  font-size: 19px;
+}
+.address p {
+  color: #888;
+  font-size: 17px;
+  line-height: 1.6em;
+}
+.address p span {
+  font-size: 16px;
+}
+.map {
+  margin: 20px 0 40px;
+}
+.map .hide {
+  display: none;
+}
+.map .open-map a {
+  background-color: rgb(224, 189, 175);
+  color: #fff;
+  font-size: 15px;
+  display: inline-block;
+  width: 100%;
+  padding: 8px 0;
+}
+.directions {
+  text-align: left;
+}
+.directions h5 {
+  color: #c28e79;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.directions p {
+font-size: 16px;
+}
+.directions ul {
+  margin-top: 10px;
+  font-size: 0;
+}
+.directions ul li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 15px;
+}
+.directions ul li:first-child {
+  width: 20%;
+  min-width: 73px;
+}
+.directions ul li:last-child {
+  width: 80%
+}
+/*** Account information ***/
+.account-information {
+  padding-top: 30px;
+}
+.account-information h3 {
+  margin: 15px 0 30px;
+}
+.account-information ul li {
+  width: 80%;
+  margin: 10px auto;
+}
+.account-slide-btn {
+  background-color: rgb(241 226 219);
+  padding: 6px;
+  position: relative;
+}
+.account-slide-btn i {
+  font-size: 22px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.account-list-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.account-box {
+  background-color: #fff;
+  text-align-last: left;
+  padding: 5px 20px;
+  min-height: 80px;
+  font-size: 15px;
+  line-height: 1.6em;
+  display: flex;
+  justify-content: space-between;
+}
+.account-box:first-child {
+  margin-bottom: 3px;
+}
+.account-box > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.account-box .buttons button {
+  border: none;
+  outline: none;
+  padding: 6px 15px;
+  display: flex;
+  margin: 5px 0;
+  border-radius: 3px;
+  display: block;
+  cursor: pointer;
+  color: #d54040;
+}
+.account-box .buttons button:nth-child(2) {
+  background-color: #ffeb00;
+  color: #212529;
+  padding: 4px 20px;
+}
+.account-box .buttons button:nth-child(2) img {
+  vertical-align: middle;
+}
+/* 계좌번호 클릭시 이벤트 */
+.account-slide-btn.on i {
+  transform: translateY(-50%) rotate(180deg);
+}
+.account-list-container.on {
+  max-height: 300px;
+}
+
+/*** Footer ***/
+footer {
+  background-color: #f0eded;
+  font-size: 15px;
+  padding: 40px 0 20px;
+}
+footer div a,
+footer button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3px;
+}
+footer div img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+footer button {
+  border: none;
+  margin: auto;
+  color: #555;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  background-color: transparent;
+}
+footer button i {
+  font-size: 20px;
+  margin-right: 7px;
+  vertical-align: middle;
+}
+footer button b {
+  font-weight: normal;
+  margin: 0 4px;
+}
+footer .copyright {
+  font-size: 12px;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+/*** Modal : 혼주에게 연락하기 ***/
+.contact-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+}
+.modal-bg {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+}
+.modal-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 350px;
+  background: #fff;
+  border-radius: 5px;
+  text-align: center;
+  background: #f7f7f7;
+}
+.modal-box h6 {
+  font-size: 18px;
+  padding: 14px;
+  background: rgb(252, 238, 232);
+  border-radius: 5px 5px 0 0;
+}
+.modal-box ul {
+  width: 76%;
+  margin: auto;
+  padding: 20px 0;
+}
+.modal-box ul.groom-contact {
+  border-bottom: 1px solid #ddd;
+}
+.modal-box ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+.groom-contact li div:nth-child(1),
+.groom-contact li div:nth-child(3) a {
+  color: #7397b1;;
+}
+.bride-contact li div:nth-child(1),
+.bride-contact li div:nth-child(3) a {
+  color: #d97c74;
+}
+.modal-box ul li div a {
+  display: inline-block;
+  background-color: #fff;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  line-height: 36px;
+  overflow: hidden;
+  margin-left: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+}
+.modal-close {
+  font-size: 32px;
+  position: absolute;
+  top: -42px;
+  right: -7px;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  cursor: pointer;
+}
