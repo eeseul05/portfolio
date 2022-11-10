@@ -8,11 +8,11 @@ for (const button of likeButtons) {
 
 
 // 슬라이더
-let slider = document.querySelector(".slider")
-let innerSlider = document.querySelector(".slider ul")
-let pressed = false
-let startx
-let x
+let slider = document.querySelector(".slider");
+let innerSlider = document.querySelector(".slider ul");
+let pressed = false;
+let startx;
+let x;
 
 // 웹 (마우스 드래그)
 slider.addEventListener("mousedown", e => {
@@ -27,38 +27,40 @@ window.addEventListener("mouseup", () => {
 slider.addEventListener("mousemove", e => {
   if (!pressed) return;
   e.preventDefault();
-  x = e.offsetX
+  x = e.offsetX;
 
   innerSlider.style.left = `${x - startx}px`
-  checkboundary()
+  checkboundary();
 })
 
 // 모바일 (터치)
 slider.addEventListener("touchstart", e => {
-  pressed = true
-  startx = e.offsetX - innerSlider.offsetLeft
+  pressed = true;
+  e.offsetX = e.touches[0].pageX - e.touches[0].target.offsetLeft;
+  startx = e.offsetX - innerSlider.offsetLeft;
 })
 
 window.addEventListener("touchend", () => {
-  pressed = false
+  pressed = false;
 })
 
 slider.addEventListener("touchmove", e => {
-  if (!pressed) return
-  e.preventDefault()
-  x = e.offsetX
+  if (!pressed) return;
+  e.preventDefault();
+  e.offsetX = e.touches[0].pageX - e.touches[0].target.offsetLeft;
+  x = e.offsetX;
 
   innerSlider.style.left = `${x - startx}px`
-  checkboundary()
+  checkboundary();
 })
 
 function checkboundary() {
-  let outer = slider.getBoundingClientRect()
-  let inner = innerSlider.getBoundingClientRect()
+  let outer = slider.getBoundingClientRect();
+  let inner = innerSlider.getBoundingClientRect();
 
   if (parseInt(innerSlider.style.left) > 0) {
-    innerSlider.style.left = "0px"
+    innerSlider.style.left = "0px";
   } else if (inner.right < outer.right) {
-    innerSlider.style.left = `-${inner.width - outer.width}px`
+    innerSlider.style.left = `-${inner.width - outer.width}px`;
   }
 }
