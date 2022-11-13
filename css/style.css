@@ -229,7 +229,7 @@ h1 span::after {
 .about-me {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
 }
 .about-me > div {
   font-size: 18px;
@@ -271,12 +271,11 @@ h1 span::after {
 .profile-text p b {
   font-weight: 500;
 }
-/* 추후 반영 예정
 .abount-me-links a {
   color: #333;
   line-height: 1em;
   display: inline-block;
-  padding: 10px 50px; 
+  padding: 10px 70px; 
   border: 1px solid #333;
   border-radius: 50px;
   margin-right: 10px;
@@ -287,7 +286,6 @@ h1 span::after {
   background-color: #333;
   color: #fff;
 }
- */
 /* skills */
 .about .publishing-skills {
   margin: 80px auto;
